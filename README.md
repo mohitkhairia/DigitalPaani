@@ -1,6 +1,4 @@
-Sure, here's a README template for your React weather dashboard project:
-
----
+Deployed Link - https://digital-weather-app.netlify.app/
 
 # React Weather App
 
