@@ -1,0 +1,105 @@
+.weather-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+  
+  .circle {
+    position: relative;
+    width: 80%;  /* Make width responsive */
+    max-width: 500px;  /* Max width for large screens */
+    height: auto;
+    aspect-ratio: 1;  /* Keep it circular */
+    border-radius: 50%;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #783333;
+    padding: 20px;  /* Padding for text spacing */
+  }
+  
+  .weather-detail {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;  /* Use relative font size */
+  }
+  
+  .temp {
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+  .temp p{
+    font-size: 0.9em;
+  }
+  
+  .temp img {
+    width: 30px;
+    height: 30px;
+    margin-left: 2%;
+  }
+
+  .humidity {
+    right: 30%;
+    color: #fff;
+  }
+  
+  .wind {
+    left: 30%;
+    color: #fff;
+  }
+
+  .description {
+    bottom: 10%;
+    color: #fff;
+  }
+  
+  .center {
+    position: absolute;
+    text-align: center;
+    font-size: 2.2em;
+    color: #fff;
+  }
+  
+  .no-data {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .circle {
+      max-width: 250px;  /* Smaller max-width for small screens */
+    }
+  
+    .weather-detail,
+    .center {
+      font-size: 0.8em;  /* Smaller font size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .circle {
+      max-width: 200px;
+    }
+  
+    .weather-detail,
+    .center {
+      font-size: 0.7em;
+    }
+  }
+  
+  /* Additional global style adjustments for mobile */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;  /* Center everything by default */
+    padding: 10px;  /* Avoid touching the edges */
+  }
+  
